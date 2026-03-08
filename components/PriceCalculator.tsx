@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { products, formatPrice } from "@/lib/products";
+import { products, formatPrice, getPriceByQuantity, getDiscountPercentage } from "@/lib/products";
 
 export default function PriceCalculator() {
   const [selectedProduct, setSelectedProduct] = useState(products[0].id);
@@ -9,22 +9,12 @@ export default function PriceCalculator() {
 
   const product = products.find((p) => p.id === selectedProduct) || products[0];
 
-  let pricePerUnit = product.pricePerUnit;
-  let discount = 0;
-  let tier = "Minorista";
+  const discount = getDiscountPercentage(quantity);
+  const tier = discount === 12 ? "Mayorista Premium" : discount === 5 ? "Semi-Mayorista" : "Minorista";
+  const currentPrice = getPriceByQuantity(product.price, quantity);
 
-  if (quantity >= 100) {
-    pricePerUnit = product.price100;
-    discount = 12;
-    tier = "Mayorista Premium";
-  } else if (quantity >= 10) {
-    pricePerUnit = product.price10;
-    discount = 5;
-    tier = "Semi-Mayorista";
-  }
-
-  const total = pricePerUnit * quantity;
-  const totalSinDescuento = product.pricePerUnit * quantity;
+  const total = currentPrice * quantity;
+  const totalSinDescuento = product.price * quantity;
   const ahorro = totalSinDescuento - total;
 
   return (
@@ -63,7 +53,7 @@ export default function PriceCalculator() {
               >
                 {products.map((p) => (
                   <option key={p.id} value={p.id}>
-                    {p.name} — {formatPrice(p.pricePerUnit)}/{p.unit}
+                    {p.name} — {formatPrice(p.price)}/{p.unit}
                   </option>
                 ))}
               </select>
@@ -161,7 +151,7 @@ export default function PriceCalculator() {
               <div className="flex justify-between items-center py-2">
                 <span className="text-warm-500">Precio unitario</span>
                 <span className="font-semibold text-warm-700">
-                  {formatPrice(pricePerUnit)}
+                  {formatPrice(product.price)}
                 </span>
               </div>
               <div className="flex justify-between items-center py-2">

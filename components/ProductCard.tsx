@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Product, formatPrice, getPriceByQuantity, getDiscountPercentage, getDiscountTier } from "@/lib/products";
+import { Product, formatPrice, getPriceByQuantity, getDiscountPercentage } from "@/lib/products";
 
 interface Props {
   product: Product;
@@ -31,24 +31,21 @@ export default function ProductCard({ product, index }: Props) {
   
   const emoji = categoryEmojis[product.category] || "🍴";
   
-  const currentPrice = getPriceByQuantity(product.pricePerUnit, quantity);
+  const currentPrice = getPriceByQuantity(product.price, quantity);
   const discountPercentage = getDiscountPercentage(quantity);
-  const discountTier = getDiscountTier(quantity);
   
-  const originalPrice = product.pricePerUnit;
+  const originalPrice = product.price;
   const savings = (originalPrice - currentPrice) * quantity;
 
-  // Dynamic discount badge colors based on tier
+  // Dynamic discount badge colors based on percentage
   const getDiscountBadgeColor = () => {
-    switch (discountTier) {
-      case 'premium':
+    switch (discountPercentage) {
+      case 12:
         return 'bg-berry-600 text-white';
-      case 'mayorista':
+      case 5:
         return 'bg-olive-600 text-white';
-      case 'semi-mayorista':
-        return 'bg-warm-500 text-white';
       default:
-        return 'bg-gray-300 text-gray-600';
+        return 'bg-warm-500 text-white';
     }
   };
 
@@ -107,23 +104,6 @@ export default function ProductCard({ product, index }: Props) {
           {product.description}
         </p>
 
-        {/* Variants if any */}
-        {product.hasVariants && product.variants && (
-          <div className="mb-4 space-y-1.5">
-            {product.variants.map((v, i) => (
-              <div
-                key={i}
-                className="flex justify-between items-center text-sm"
-              >
-                <span className="text-warm-500">{v.label}</span>
-                <span className="font-semibold text-warm-700">
-                  {formatPrice(v.price)}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
-
         {/* Quantity selector */}
         <div className="mb-4">
           <label className="text-sm font-medium text-warm-600 mb-2 block">
@@ -179,13 +159,12 @@ export default function ProductCard({ product, index }: Props) {
         </div>
 
         {/* Tier indicator */}
-        {discountTier !== 'minorista' && (
+        {discountPercentage > 0 && (
           <div className="mb-4 p-2 rounded-lg bg-gradient-to-r from-warm-50 to-olive-50 border border-warm-200">
             <div className="flex items-center justify-center gap-2 text-sm">
               <span className="font-medium text-warm-700">
-                {discountTier === 'semi-mayorista' && '📌 Semi-Mayorista'}
-                {discountTier === 'mayorista' && '⭐ Mayorista'}
-                {discountTier === 'premium' && '🌟 Premium'}
+                {discountPercentage === 5 && '📌 Semi-Mayorista'}
+                {discountPercentage === 12 && '⭐ Mayorista'}
               </span>
               <span className="text-warm-600">
                 {discountPercentage}% de descuento
