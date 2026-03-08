@@ -1,17 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
 
-// Check if environment variables are properly configured
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
-
-if (!supabaseUrl || !supabaseServiceKey || supabaseUrl.includes('your-project-id')) {
-  console.warn('Supabase environment variables are not properly configured. Please check your .env.local file.')
-}
-
-const supabase = supabaseUrl && supabaseServiceKey && !supabaseUrl.includes('your-project-id') 
-  ? createClient(supabaseUrl, supabaseServiceKey)
-  : null
-
 export async function POST(request: Request) {
   try {
     const body = await request.json()
@@ -25,13 +13,23 @@ export async function POST(request: Request) {
       )
     }
 
-    // Check if Supabase is configured
-    if (!supabase) {
+    // Check environment variables at runtime
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+    if (!supabaseUrl || !supabaseServiceKey || supabaseUrl.includes('your-project-id')) {
+      console.error('Supabase environment variables are not properly configured')
       return Response.json(
-        { error: 'Database not configured. Please contact administrator.' },
+        { 
+          error: 'Database service is temporarily unavailable. Please try again later.',
+          details: 'Database configuration missing'
+        },
         { status: 503 }
       )
     }
+
+    // Create Supabase client only when needed
+    const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
     // Insert order into Supabase
     const { data, error } = await supabase
