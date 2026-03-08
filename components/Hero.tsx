@@ -57,14 +57,13 @@ export default function Hero() {
           {/* Title */}
           <div className="mb-6 animate-slide-up">
             <img 
-              src="/logo mcdelicias.png" 
+              src="/logo-transparente.png" 
               alt="MC Delicias Campestres" 
-              className="w-full max-w-md mx-auto"
+              className="mx-auto"
               style={{
-                width: '400px',
+                width: '380px',
                 height: 'auto',
-                filter: 'brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
-                mixBlendMode: 'screen'
+                filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,0.5))'
               }}
             />
           </div>

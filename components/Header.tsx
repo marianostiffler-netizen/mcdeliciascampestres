@@ -25,12 +25,12 @@ export default function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img 
-              src="/logo mcdelicias.png" 
+              src="/logo-transparente.png" 
               alt="MC Delicias Campestres" 
-              className="h-14 w-auto"
+              className="w-auto"
               style={{
-                mixBlendMode: 'multiply',
-                filter: 'contrast(1.2) brightness(1.1)'
+                height: '50px',
+                filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,0.5))'
               }}
             />
             <div>
