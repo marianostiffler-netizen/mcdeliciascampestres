@@ -17,7 +17,7 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-warm-200/20 py-3"
-          : "bg-transparent py-5"
+          : "bg-cream-100 py-5"
       }`}
     >
       <div className="container-custom px-4 sm:px-6 lg:px-8">
@@ -28,15 +28,19 @@ export default function Header() {
               className={`w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 ${
                 scrolled
                   ? "bg-gradient-to-br from-warm-500 to-warm-600 shadow-md"
-                  : "bg-white/20 backdrop-blur-sm"
+                  : "bg-cream-100 shadow-md"
               }`}
             >
-              <span className="text-xl">🌾</span>
+              <img 
+                src="/logo.svg" 
+                alt="MC Delicias Campestres" 
+                className="w-8 h-8"
+              />
             </div>
             <div>
               <h1
                 className={`text-lg font-bold leading-tight transition-colors duration-300 ${
-                  scrolled ? "text-warm-800" : "text-white"
+                  scrolled ? "text-warm-800" : "text-warm-800"
                 }`}
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
@@ -44,7 +48,7 @@ export default function Header() {
               </h1>
               <p
                 className={`text-[10px] uppercase tracking-[0.2em] font-medium transition-colors duration-300 ${
-                  scrolled ? "text-warm-500" : "text-white/70"
+                  scrolled ? "text-warm-500" : "text-warm-600"
                 }`}
               >
                 Campestres
@@ -64,7 +68,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition-all duration-300 hover:opacity-70 ${
-                  scrolled ? "text-warm-700" : "text-white/90"
+                  scrolled ? "text-warm-700" : "text-warm-700"
                 }`}
               >
                 {item.label}
@@ -81,7 +85,7 @@ export default function Header() {
               className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
                 scrolled
                   ? "bg-olive-600 text-white hover:bg-olive-700 shadow-md"
-                  : "bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30"
+                  : "bg-warm-600 text-white hover:bg-warm-700 shadow-md"
               }`}
             >
               <span>📱</span>
@@ -93,7 +97,7 @@ export default function Header() {
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className={`md:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? "text-warm-700" : "text-white"
+              scrolled ? "text-warm-700" : "text-warm-700"
             }`}
           >
             <svg
