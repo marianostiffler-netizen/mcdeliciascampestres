@@ -103,7 +103,7 @@ export default function ProductCard({ product, index }: Props) {
         </h3>
 
         {/* Description */}
-        <p className="text-warm-500 text-sm leading-relaxed mb-4 line-clamp-2">
+        <p className="text-warm-500 text-sm leading-relaxed mb-4">
           {product.description}
         </p>
 
