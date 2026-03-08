@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <ProductGrid />
-      <PriceCalculator cart={[]} />
+      <PriceCalculator />
       <Footer />
       <WhatsAppButton />
     </div>
