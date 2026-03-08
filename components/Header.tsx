@@ -25,13 +25,10 @@ export default function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img 
-              src="/logo-transparente.png" 
-              alt="MC Delicias Campestres" 
+              src="/images/logo-transparente.png" 
+              alt="Logo" 
               className="w-auto"
-              style={{
-                height: '50px',
-                filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,0.5))'
-              }}
+              style={{ height: '50px' }}
             />
             <div>
               <h1

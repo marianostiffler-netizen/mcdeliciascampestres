@@ -57,14 +57,9 @@ export default function Hero() {
           {/* Title */}
           <div className="mb-6 animate-slide-up">
             <img 
-              src="/logo-transparente.png" 
-              alt="MC Delicias Campestres" 
-              className="mx-auto"
-              style={{
-                width: '380px',
-                height: 'auto',
-                filter: 'drop-shadow(0px 4px 6px rgba(0,0,0,0.5))'
-              }}
+              src="/images/logo-transparente.png" 
+              alt="Logo" 
+              className="mx-auto w-[350px] h-auto"
             />
           </div>
 
