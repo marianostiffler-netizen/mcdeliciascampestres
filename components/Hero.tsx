@@ -55,19 +55,19 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-slide-up"
-            style={{ fontFamily: "'Playfair Display', serif" }}
-          >
-            MC Delicias
-            <br />
-            <span
-              className="text-cream-400 italic font-medium text-4xl sm:text-5xl md:text-6xl"
-              style={{ fontFamily: "'Dancing Script', cursive" }}
-            >
-              Campestres
-            </span>
-          </h1>
+          <div className="mb-6 animate-slide-up">
+            <img 
+              src="/logo mcdelicias.png" 
+              alt="MC Delicias Campestres" 
+              className="w-full max-w-md mx-auto"
+              style={{
+                width: '400px',
+                height: 'auto',
+                filter: 'brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
+                mixBlendMode: 'screen'
+              }}
+            />
+          </div>
 
           {/* Subtitle */}
           <p

@@ -23,20 +23,16 @@ export default function Header() {
       <div className="container-custom px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div
-              className={`w-14 h-8 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                scrolled
-                  ? "bg-gradient-to-br from-warm-500 to-warm-600 shadow-md"
-                  : "bg-white shadow-md"
-              }`}
-            >
-              <img 
-                src="/logo-mcdelicias.svg" 
-                alt="MC Delicias Campestres" 
-                className="w-12 h-6"
-              />
-            </div>
+          <a href="#" className="flex items-center gap-3">
+            <img 
+              src="/logo mcdelicias.png" 
+              alt="MC Delicias Campestres" 
+              className="h-14 w-auto"
+              style={{
+                mixBlendMode: 'multiply',
+                filter: 'contrast(1.2) brightness(1.1)'
+              }}
+            />
             <div>
               <h1
                 className={`text-lg font-bold leading-tight transition-colors duration-300 ${
