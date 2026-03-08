@@ -88,7 +88,7 @@ export default function Hero() {
               Ver Catálogo Completo
             </a>
             <a
-              href="https://wa.me/5491100000000?text=Hola! Me interesa conocer los precios mayoristas"
+              href="https://wa.me/5493412524163?text=Hola! Me interesa conocer los precios mayoristas"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-2xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 text-lg"

@@ -72,7 +72,7 @@ export default function Header() {
           {/* CTA */}
           <div className="hidden md:block">
             <a
-              href="https://wa.me/5491100000000?text=Hola! Quiero hacer un pedido"
+              href="https://wa.me/5493412524163?text=Hola! Quiero hacer un pedido"
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
@@ -138,7 +138,7 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="https://wa.me/5491100000000?text=Hola! Quiero hacer un pedido"
+                href="https://wa.me/5493412524163?text=Hola! Quiero hacer un pedido"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary mt-2 text-center"

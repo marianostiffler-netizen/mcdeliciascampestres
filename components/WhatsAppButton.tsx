@@ -29,7 +29,7 @@ export default function WhatsAppButton() {
       />
 
       <a
-        href="https://wa.me/5491100000000?text=Hola! Quiero hacer un pedido de MC Delicias Campestres"
+        href="https://wa.me/5493412524163?text=Hola! Quiero hacer un pedido de MC Delicias Campestres"
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full shadow-2xl shadow-green-500/40 transition-all duration-300 hover:scale-105 active:scale-95 group"

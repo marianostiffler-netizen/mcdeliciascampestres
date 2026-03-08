@@ -88,12 +88,15 @@ export default function Footer() {
                 <p className="text-white/40 text-xs">
                   Panificación artesanal con amor
                 </p>
+                <p className="text-white/50 text-xs mt-1">
+                  📱 341 252-4163
+                </p>
               </div>
             </div>
 
             <div className="flex items-center gap-6">
               <a
-                href="https://wa.me/5491100000000"
+                href="https://wa.me/5493412524163"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/50 hover:text-green-400 transition-colors flex items-center gap-2 text-sm"

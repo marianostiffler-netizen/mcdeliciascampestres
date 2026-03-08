@@ -194,7 +194,7 @@ export default function PriceCalculator() {
 
             {/* CTA */}
             <a
-              href={`https://wa.me/5491100000000?text=Hola! Quiero pedir ${quantity} unidad/es de ${product.name}. Total: ${formatPrice(total)}`}
+              href={`https://wa.me/5493412524163?text=Hola! Quiero pedir ${quantity} unidad/es de ${product.name}. Total: ${formatPrice(total)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 w-full btn-primary text-lg py-4 rounded-2xl flex items-center justify-center gap-2"
