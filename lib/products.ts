@@ -65,8 +65,7 @@ export const products: Product[] = [
     name: "Alfajor de Maicena",
     basePrice: increasePrice40(2187),
     unit: "unidad",
-    description:
-      "Suave alfajor de maicena con dulce de leche artesanal, bañado en coco rallado. Tradición argentina en cada bocado.",
+    description: "Suave alfajor de maicena con dulce de leche artesanal y coco rallado.",
     image: "/images/alfajor-maicena.jpg",
     pricePerUnit: increasePrice40(2187),
     price10: calcPrice10(increasePrice40(2187)),
@@ -85,8 +84,7 @@ export const products: Product[] = [
     name: "Alfajor Crocante",
     basePrice: 2426,
     unit: "unidad",
-    description:
-      "Alfajor crocante con relleno de dulce de leche, una textura irresistible que cruje con cada mordisco.",
+    description: "Alfajor crocante con relleno de dulce de leche y textura crujiente.",
     image: "/images/alfajor-crocante.jpg",
     pricePerUnit: 2426,
     price10: calcPrice10(2426),
@@ -122,40 +120,28 @@ export const products: Product[] = [
   {
     id: "alfajor-coco",
     category: "alfajores",
-    name: "Alfajor de Coco",
+    name: "Alfajor de Coco x6 Unidades",
     basePrice: 529,
     unit: "unidad",
-    description:
-      "Delicado alfajor de coco con relleno suave. Liviano y delicioso, ideal para acompañar el mate.",
+    description: "Delicado alfajor de coco con relleno suave y sabor tropical.",
     image: "/images/alfajor-coco.jpg",
     pricePerUnit: 529,
     price10: calcPrice10(529),
     price50: calcPrice50(529),
     price100: calcPrice100(529),
-    hasVariants: true,
-    variants: [
-      { label: "Caja x6", price: 4445 },
-      { label: "Caja x12", price: 3969 },
-    ],
   },
   {
     id: "alfajor-almendrado",
     category: "alfajores",
-    name: "Alfajor Almendrado",
+    name: "Alfajor Almendrado x6 Unidades",
     basePrice: 640,
     unit: "unidad",
-    description:
-      "Exquisito alfajor con almendras, textura premium y sabor inigualable. Un producto gourmet artesanal.",
+    description: "Exquisito alfajor con almendras y textura premium.",
     image: "/images/alfajor-almendrado.jpg",
     pricePerUnit: 640,
     price10: calcPrice10(640),
     price50: calcPrice50(640),
     price100: calcPrice100(640),
-    hasVariants: true,
-    variants: [
-      { label: "Caja x6", price: 3837 },
-      { label: "Caja x12", price: 7391 },
-    ],
   },
 
   // ============ VARIOS DULCES ============
