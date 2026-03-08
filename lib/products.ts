@@ -37,7 +37,7 @@ export const products: Product[] = [
   {
     id: "alfajor-maicena-x1",
     category: "alfajores",
-    name: "Alfajor de Maicena x1",
+    name: "Alfajores Maicena por unidad",
     price: 1736,
     unit: "unidad",
     description: "Alfajor de maicena artesanal con dulce de leche, bañado en coco rallado.",
@@ -48,7 +48,7 @@ export const products: Product[] = [
   {
     id: "alfajor-maicena-x6",
     category: "alfajores",
-    name: "Alfajores de Maicena x6",
+    name: "Alfajores Maicena por 6",
     price: 3780,
     unit: "caja x6",
     description: "Caja de 6 alfajores de maicena con dulce de leche artesanal.",
@@ -59,7 +59,7 @@ export const products: Product[] = [
   {
     id: "alfajor-maicena-x10-12",
     category: "alfajores",
-    name: "Alfajores de Maicena x10/12",
+    name: "Alfajores Maicena por 10/12",
     price: 5670,
     unit: "caja x10/12",
     description: "Caja de 10 a 12 alfajores de maicena con dulce de leche artesanal.",
@@ -70,7 +70,7 @@ export const products: Product[] = [
   {
     id: "alfajor-crocante-x1",
     category: "alfajores",
-    name: "Alfajor Crocante x1",
+    name: "Alfajores Crocante por unidad",
     price: 1925,
     unit: "unidad",
     description: "Alfajor crocante con dulce de leche, textura irresistible.",
@@ -81,7 +81,7 @@ export const products: Product[] = [
   {
     id: "alfajor-crocante-x6",
     category: "alfajores",
-    name: "Alfajores Crocantes x6",
+    name: "Alfajores Crocante por 6",
     price: 5306,
     unit: "caja x6",
     description: "Caja de 6 alfajores crocantes con dulce de leche.",
@@ -92,7 +92,7 @@ export const products: Product[] = [
   {
     id: "alfajor-crocante-x10-12",
     category: "alfajores",
-    name: "Alfajores Crocantes x10/12",
+    name: "Alfajores Crocante por 10/12",
     price: 7294,
     unit: "caja x10/12",
     description: "Caja de 10 a 12 alfajores crocantes con dulce de leche.",
@@ -103,7 +103,7 @@ export const products: Product[] = [
   {
     id: "alfajor-chocolate-x1",
     category: "alfajores",
-    name: "Alfajor de Chocolate x1",
+    name: "Alfajores Chocolate por unidad",
     price: 1925,
     unit: "unidad",
     description: "Alfajor bañado en chocolate con dulce de leche artesanal.",
@@ -114,7 +114,7 @@ export const products: Product[] = [
   {
     id: "alfajor-chocolate-x6",
     category: "alfajores",
-    name: "Alfajores de Chocolate x6",
+    name: "Alfajores Chocolate por 6",
     price: 4844,
     unit: "caja x6",
     description: "Caja de 6 alfajores bañados en chocolate con dulce de leche.",
@@ -125,7 +125,7 @@ export const products: Product[] = [
   {
     id: "alfajor-chocolate-x10-12",
     category: "alfajores",
-    name: "Alfajores de Chocolate x10/12",
+    name: "Alfajores Chocolate por 10/12",
     price: 7294,
     unit: "caja x10/12",
     description: "Caja de 10 a 12 alfajores bañados en chocolate con dulce de leche.",
@@ -136,7 +136,7 @@ export const products: Product[] = [
   {
     id: "alfajor-coco-x6",
     category: "alfajores",
-    name: "Alfajores de Coco x6",
+    name: "Alfajores Coco por 6",
     price: 2520,
     unit: "caja x6",
     description: "Caja de 6 alfajores de coco con relleno suave. Ideales para el mate.",
@@ -147,7 +147,7 @@ export const products: Product[] = [
   {
     id: "alfajor-coco-x12",
     category: "alfajores",
-    name: "Alfajores de Coco x12",
+    name: "Alfajores Coco por 12",
     price: 3150,
     unit: "caja x12",
     description: "Caja de 12 alfajores de coco con relleno suave.",
@@ -158,7 +158,7 @@ export const products: Product[] = [
   {
     id: "alfajor-almendrado-x6",
     category: "alfajores",
-    name: "Alfajores Almendrados x6",
+    name: "Alfajores Almendrados por 6",
     price: 3045,
     unit: "caja x6",
     description: "Caja de 6 alfajores almendrados, textura premium artesanal.",
@@ -169,7 +169,7 @@ export const products: Product[] = [
   {
     id: "alfajor-almendrado-x12",
     category: "alfajores",
-    name: "Alfajores Almendrados x12",
+    name: "Alfajores Almendrados por 12",
     price: 5866,
     unit: "caja x12",
     description: "Caja de 12 alfajores almendrados, sabor gourmet artesanal.",
@@ -182,7 +182,7 @@ export const products: Product[] = [
   {
     id: "pepas-membrillo",
     category: "varios-dulces",
-    name: "Pepas de Membrillo",
+    name: "Varios Dulces Pepas de membrillo",
     price: 2646,
     unit: "kg",
     description: "Pepas rellenas con membrillo casero. Crujientes por fuera, dulces por dentro.",
@@ -193,7 +193,7 @@ export const products: Product[] = [
   {
     id: "pepas-dulce-de-leche",
     category: "varios-dulces",
-    name: "Pepas de Dulce de Leche",
+    name: "Varios Dulces Pepas de leche",
     price: 2723,
     unit: "kg",
     description: "Pepas artesanales con dulce de leche casero.",
@@ -204,7 +204,7 @@ export const products: Product[] = [
   {
     id: "masitas-varias",
     category: "varios-dulces",
-    name: "Masitas Varias",
+    name: "Varios Dulces Masitas varias",
     price: 2422,
     unit: "kg",
     description: "Surtido de masitas artesanales variadas. Perfectas para compartir.",
@@ -215,7 +215,7 @@ export const products: Product[] = [
   {
     id: "materas",
     category: "varios-dulces",
-    name: "Materas",
+    name: "Varios Dulces Materas",
     price: 3206,
     unit: "kg",
     description: "Galletitas materas ideales para acompañar el mate.",
@@ -226,7 +226,7 @@ export const products: Product[] = [
   {
     id: "secas",
     category: "varios-dulces",
-    name: "Masitas Secas",
+    name: "Varios Dulces Secas",
     price: 3276,
     unit: "kg",
     description: "Masitas secas surtidas, calidad artesanal en cada unidad.",
@@ -237,7 +237,7 @@ export const products: Product[] = [
   {
     id: "trufas",
     category: "varios-dulces",
-    name: "Trufas",
+    name: "Varios Dulces Trufas",
     price: 3206,
     unit: "kg",
     description: "Trufas de chocolate artesanales con cacao de primera calidad.",
@@ -248,7 +248,7 @@ export const products: Product[] = [
   {
     id: "copitos",
     category: "varios-dulces",
-    name: "Copitos",
+    name: "Varios Dulces Copitos",
     price: 4648,
     unit: "kg",
     description: "Copitos de merengue livianos que se deshacen en la boca.",
@@ -259,7 +259,7 @@ export const products: Product[] = [
   {
     id: "brownie-porcion",
     category: "varios-dulces",
-    name: "Brownie Porción",
+    name: "Varios Dulces Brownie porción",
     price: 3059,
     unit: "porción",
     description: "Brownie húmedo y chocolatoso con nueces. Porción generosa.",
@@ -272,7 +272,7 @@ export const products: Product[] = [
   {
     id: "saborizadas",
     category: "salados",
-    name: "Saborizadas",
+    name: "Salados Saborizadas",
     price: 1540,
     unit: "unidad",
     description: "Galletitas saborizadas con hierbas y especias seleccionadas.",
@@ -283,7 +283,7 @@ export const products: Product[] = [
   {
     id: "marineras",
     category: "salados",
-    name: "Marineras",
+    name: "Salados Marineras",
     price: 1344,
     unit: "unidad",
     description: "Galletas marineras crocantes para picadas, quesos y fiambres.",
@@ -294,7 +294,7 @@ export const products: Product[] = [
   {
     id: "pizzetas",
     category: "salados",
-    name: "Pizzetas",
+    name: "Salados Pizzetas",
     price: 490,
     unit: "unidad",
     description: "Mini pizzetas base artesanal, listas para preparar.",
@@ -305,7 +305,7 @@ export const products: Product[] = [
   {
     id: "pizzetas-listas",
     category: "salados",
-    name: "Pizzetas Listas",
+    name: "Salados Pizzetas listas",
     price: 1554,
     unit: "unidad",
     description: "Pizzetas preparadas con salsa y muzzarella. Solo calentar.",
@@ -316,7 +316,7 @@ export const products: Product[] = [
   {
     id: "pizzas-listas",
     category: "salados",
-    name: "Pizzas Listas",
+    name: "Salados Pizzas listas",
     price: 6160,
     unit: "unidad",
     description: "Pizza grande lista para hornear con salsa casera y muzzarella.",
@@ -327,7 +327,7 @@ export const products: Product[] = [
   {
     id: "pre-pizzas",
     category: "salados",
-    name: "Pre Pizzas",
+    name: "Salados Pre pizzas",
     price: 1862,
     unit: "unidad",
     description: "Bases de pizza artesanales para personalizar a tu gusto.",
@@ -338,7 +338,7 @@ export const products: Product[] = [
   {
     id: "plancha-pizza-45x70",
     category: "salados",
-    name: "Plancha de Pizza 45x70",
+    name: "Salados Planchas de pizzas 45x70",
     price: 20090,
     unit: "plancha",
     description: "Plancha grande de pizza (45x70cm). Ideal para eventos y locales.",
@@ -349,7 +349,7 @@ export const products: Product[] = [
   {
     id: "plancha-pizza-45x50",
     category: "salados",
-    name: "Plancha de Pizza 45x50",
+    name: "Salados Planchas de pizzas 45x50",
     price: 15120,
     unit: "plancha",
     description: "Plancha de pizza (45x50cm) para reuniones familiares.",
@@ -360,7 +360,7 @@ export const products: Product[] = [
   {
     id: "torta-salada-grande",
     category: "salados",
-    name: "Torta Salada Grande",
+    name: "Salados Torta salada grande",
     price: 33194,
     unit: "unidad",
     description: "Torta salada grande con relleno abundante para eventos.",
@@ -371,7 +371,7 @@ export const products: Product[] = [
   {
     id: "torta-salada-chica",
     category: "salados",
-    name: "Torta Salada Chica",
+    name: "Salados Torta salada chica",
     price: 22715,
     unit: "unidad",
     description: "Torta salada chica con relleno casero y masa hojaldrada.",
@@ -382,7 +382,7 @@ export const products: Product[] = [
   {
     id: "empanadas-copetin",
     category: "salados",
-    name: "Empanadas Copetín",
+    name: "Salados Empanadas copetín",
     price: 3794,
     unit: "docena",
     description: "Mini empanadas de copetín, variedad de gustos. Ideales para eventos.",
@@ -395,7 +395,7 @@ export const products: Product[] = [
   {
     id: "mesa-dulce-grande",
     category: "catering",
-    name: "Mesa Dulce Grande",
+    name: "Catering Mesa dulce grande",
     price: 9226,
     unit: "por persona",
     description: "Mesa dulce completa para eventos grandes con variedad artesanal.",
@@ -406,7 +406,7 @@ export const products: Product[] = [
   {
     id: "mesa-dulce-chica",
     category: "catering",
-    name: "Mesa Dulce Chica",
+    name: "Catering Mesa dulce chica",
     price: 7644,
     unit: "por persona",
     description: "Mesa dulce para eventos íntimos con selección artesanal.",
@@ -419,7 +419,7 @@ export const products: Product[] = [
   {
     id: "madrilenos-x2",
     category: "hojaldres",
-    name: "Madrileños x2",
+    name: "Hojaldres Madrileños por 2",
     price: 2520,
     unit: "pack x2",
     description: "Par de madrileños hojaldrados con dulce de leche artesanal.",
@@ -430,7 +430,7 @@ export const products: Product[] = [
   {
     id: "canoncitos-ddl-con-bano",
     category: "hojaldres",
-    name: "Cañoncitos DDL c/Baño",
+    name: "Hojaldres Cañoncitos DDL c/baño",
     price: 3808,
     unit: "unidad",
     description: "Cañoncitos de hojaldre con dulce de leche y baño de chocolate.",
@@ -441,7 +441,7 @@ export const products: Product[] = [
   {
     id: "canoncitos-ddl-sin-bano",
     category: "hojaldres",
-    name: "Cañoncitos DDL s/Baño",
+    name: "Hojaldres Cañoncitos DDL s/baño",
     price: 3724,
     unit: "unidad",
     description: "Cañoncitos de hojaldre clásicos con dulce de leche sin baño.",
@@ -452,7 +452,7 @@ export const products: Product[] = [
   {
     id: "palmeritas-200g",
     category: "hojaldres",
-    name: "Palmeritas x200g",
+    name: "Hojaldres Palmeritas por 200g",
     price: 3724,
     unit: "pack 200g",
     description: "Palmeritas de hojaldre caramelizadas, pack de 200g.",
@@ -463,7 +463,7 @@ export const products: Product[] = [
   {
     id: "palmeritas-1kg",
     category: "hojaldres",
-    name: "Palmeritas x1 Kg",
+    name: "Hojaldres Palmeritas por kl",
     price: 10556,
     unit: "kg",
     description: "Palmeritas de hojaldre caramelizadas por kilo.",
@@ -474,7 +474,7 @@ export const products: Product[] = [
   {
     id: "palmeron-x1",
     category: "hojaldres",
-    name: "Palmerón x1",
+    name: "Hojaldres Palmerón por unidad",
     price: 2296,
     unit: "unidad",
     description: "Palmerón gigante de hojaldre caramelizado.",
@@ -485,7 +485,7 @@ export const products: Product[] = [
   {
     id: "churrinches-200g",
     category: "hojaldres",
-    name: "Churrinches x200g",
+    name: "Hojaldres Churrinches por 200g",
     price: 3094,
     unit: "pack 200g",
     description: "Churrinches de hojaldre artesanal, pack de 200g.",
@@ -496,7 +496,7 @@ export const products: Product[] = [
   {
     id: "churrinches-1kg",
     category: "hojaldres",
-    name: "Churrinches x1 Kg",
+    name: "Hojaldres Churrinches por kl",
     price: 10808,
     unit: "kg",
     description: "Churrinches de hojaldre artesanal por kilo.",
@@ -507,7 +507,7 @@ export const products: Product[] = [
   {
     id: "hojaldre-manzana-x2",
     category: "hojaldres",
-    name: "Hojaldre con Manzana x2",
+    name: "Hojaldres Hojaldre con Manzana (2u)",
     price: 1470,
     unit: "pack x2",
     description: "Hojaldre relleno de manzana caramelizada con canela, 2 unidades.",
@@ -520,7 +520,7 @@ export const products: Product[] = [
   {
     id: "frola-p15",
     category: "frolas",
-    name: "Pasta Frola P.15",
+    name: "Frolas P.15",
     price: 1778,
     unit: "unidad",
     description: "Pasta frola chica (15cm) con dulce de membrillo o batata.",
@@ -531,7 +531,7 @@ export const products: Product[] = [
   {
     id: "frola-p20",
     category: "frolas",
-    name: "Pasta Frola P.20",
+    name: "Frolas P.20",
     price: 3528,
     unit: "unidad",
     description: "Pasta frola mediana (20cm) con masa mantecosa y dulce casero.",
@@ -542,7 +542,7 @@ export const products: Product[] = [
   {
     id: "frola-p23",
     category: "frolas",
-    name: "Pasta Frola P.23",
+    name: "Frolas P.23",
     price: 4060,
     unit: "unidad",
     description: "Pasta frola grande (23cm) con generoso relleno casero.",
@@ -553,7 +553,7 @@ export const products: Product[] = [
   {
     id: "frola-p33",
     category: "frolas",
-    name: "Pasta Frola P.33",
+    name: "Frolas P.33",
     price: 7252,
     unit: "unidad",
     description: "Pasta frola extra grande (33cm) para eventos y celebraciones.",
@@ -566,7 +566,7 @@ export const products: Product[] = [
   {
     id: "tarta-p15",
     category: "tartas",
-    name: "Tarta P.15",
+    name: "Tartas P.15",
     price: 1946,
     unit: "unidad",
     description: "Tarta artesanal chica (15cm) con relleno a elección.",
@@ -577,7 +577,7 @@ export const products: Product[] = [
   {
     id: "tarta-p20",
     category: "tartas",
-    name: "Tarta P.20",
+    name: "Tartas P.20",
     price: 3689,
     unit: "unidad",
     description: "Tarta artesanal mediana (20cm) con relleno casero generoso.",
@@ -588,7 +588,7 @@ export const products: Product[] = [
   {
     id: "tarta-p23",
     category: "tartas",
-    name: "Tarta P.23",
+    name: "Tartas P.23",
     price: 4249,
     unit: "unidad",
     description: "Tarta artesanal grande (23cm) con relleno abundante.",
@@ -599,7 +599,7 @@ export const products: Product[] = [
   {
     id: "tarta-p33",
     category: "tartas",
-    name: "Tarta P.33",
+    name: "Tartas P.33",
     price: 7308,
     unit: "unidad",
     description: "Tarta artesanal extra grande (33cm) ideal para eventos.",
@@ -612,7 +612,7 @@ export const products: Product[] = [
   {
     id: "frutal-p20",
     category: "frutales",
-    name: "Torta Frutal P.20",
+    name: "Frutales P.20",
     price: 16100,
     unit: "unidad",
     description: "Torta frutal mediana (20cm) con frutas frescas y crema pastelera.",
@@ -623,7 +623,7 @@ export const products: Product[] = [
   {
     id: "frutal-p23",
     category: "frutales",
-    name: "Torta Frutal P.23",
+    name: "Frutales P.23",
     price: 21000,
     unit: "unidad",
     description: "Torta frutal grande (23cm) decorada con frutas frescas de estación.",
@@ -634,7 +634,7 @@ export const products: Product[] = [
   {
     id: "frutal-p33",
     category: "frutales",
-    name: "Torta Frutal P.33",
+    name: "Frutales P.33",
     price: 29260,
     unit: "unidad",
     description: "Torta frutal extra grande (33cm) para grandes eventos.",
@@ -647,7 +647,7 @@ export const products: Product[] = [
   {
     id: "pan-saborizado-kg",
     category: "panaderia",
-    name: "Pan Saborizado x Kg",
+    name: "Panadería Pan saborizado por kl",
     price: 4928,
     unit: "kg",
     description: "Pan saborizado artesanal con hierbas, especias y aceite de oliva.",
@@ -658,7 +658,7 @@ export const products: Product[] = [
   {
     id: "plancha-frola-tarta-coco-toffee",
     category: "panaderia",
-    name: "Plancha Frola/Tarta (Coco/Toffee)",
+    name: "Panadería Plancha Frola/Tarta (Coco/Toffe)",
     price: 33957,
     unit: "plancha",
     description: "Plancha grande de frola o tarta sabor coco o toffee.",
@@ -669,7 +669,7 @@ export const products: Product[] = [
   {
     id: "plancha-banana-manzana",
     category: "panaderia",
-    name: "Plancha Banana o Manzanas",
+    name: "Panadería Plancha Banana o Manzanas",
     price: 35000,
     unit: "plancha",
     description: "Plancha grande de torta de banana o manzana artesanal.",
@@ -680,7 +680,7 @@ export const products: Product[] = [
   {
     id: "budin-chico",
     category: "panaderia",
-    name: "Budín Chico",
+    name: "Panadería Budín chico",
     price: 3626,
     unit: "unidad",
     description: "Budín artesanal chico, húmedo y esponjoso.",
@@ -691,7 +691,7 @@ export const products: Product[] = [
   {
     id: "budin-grande",
     category: "panaderia",
-    name: "Budín Grande",
+    name: "Panadería Budín grande",
     price: 6643,
     unit: "unidad",
     description: "Budín artesanal grande con ingredientes premium.",
@@ -702,7 +702,7 @@ export const products: Product[] = [
   {
     id: "marineras-955-base",
     category: "panaderia",
-    name: "Marineras (955 base)",
+    name: "Panadería Marineras (955 base)",
     price: 1337,
     unit: "unidad",
     description: "Galletas marineras artesanales crocantes.",
@@ -713,7 +713,7 @@ export const products: Product[] = [
   {
     id: "combinadas",
     category: "panaderia",
-    name: "Combinadas",
+    name: "Panadería Combinadas",
     price: 4060,
     unit: "kg",
     description: "Surtido combinado de panificados artesanales variados.",
@@ -724,7 +724,7 @@ export const products: Product[] = [
   {
     id: "porcion-frola",
     category: "panaderia",
-    name: "Porción de Frola",
+    name: "Panadería Porción de frola",
     price: 1680,
     unit: "porción",
     description: "Porción generosa de pasta frola artesanal.",
@@ -735,7 +735,7 @@ export const products: Product[] = [
   {
     id: "panettones",
     category: "panaderia",
-    name: "Panettones",
+    name: "Panadería Panettones",
     price: 3556,
     unit: "unidad",
     description: "Panettone artesanal con frutas y chips de chocolate.",
@@ -746,7 +746,7 @@ export const products: Product[] = [
   {
     id: "roscas",
     category: "panaderia",
-    name: "Roscas",
+    name: "Panadería Roscas",
     price: 3605,
     unit: "unidad",
     description: "Roscas artesanales esponjosas y aromáticas.",
@@ -759,7 +759,7 @@ export const products: Product[] = [
   {
     id: "picada-chica",
     category: "picadas",
-    name: "Picada Chica",
+    name: "Picadas Chica",
     price: 4900,
     unit: "unidad",
     description: "Picada chica con quesos, fiambres, aceitunas y crackers. 2-3 personas.",
@@ -770,7 +770,7 @@ export const products: Product[] = [
   {
     id: "picada-grande",
     category: "picadas",
-    name: "Picada Grande",
+    name: "Picadas Grande",
     price: 5880,
     unit: "unidad",
     description: "Picada grande con quesos, fiambres premium y acompañamientos. 4-6 personas.",
@@ -781,7 +781,7 @@ export const products: Product[] = [
   {
     id: "picada-completa",
     category: "picadas",
-    name: "Picada Completa",
+    name: "Picadas Completa",
     price: 16212,
     unit: "unidad",
     description: "Picada completa premium con todo incluido. 8+ personas.",
