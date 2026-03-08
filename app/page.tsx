@@ -198,7 +198,7 @@ export default function Home() {
             Horneado Diariamente
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-4 text-balance">
-            Hecho con Amor
+            MC Delicias Campestres
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
             Descubre nuestra selección de panes, pasteles y postres artesanales hechos con los mejores ingredientes.
