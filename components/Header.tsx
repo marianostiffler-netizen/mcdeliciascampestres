@@ -1,91 +1,157 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import { Menu, X, Phone, Mail } from 'lucide-react'
+import { useState, useEffect } from "react";
 
-interface HeaderProps {
-  cartCount: number
-}
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export default function Header({ cartCount }: HeaderProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-warm-200/20 py-3"
+          : "bg-transparent py-5"
+      }`}
+    >
+      <div className="container-custom px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary-600">
-              MC Delicias
-            </h1>
-            <p className="text-xs text-gray-600">Panadería Artesanal</p>
-          </div>
+          <a href="#" className="flex items-center gap-3 group">
+            <div
+              className={`w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 ${
+                scrolled
+                  ? "bg-gradient-to-br from-warm-500 to-warm-600 shadow-md"
+                  : "bg-white/20 backdrop-blur-sm"
+              }`}
+            >
+              <span className="text-xl">🌾</span>
+            </div>
+            <div>
+              <h1
+                className={`text-lg font-bold leading-tight transition-colors duration-300 ${
+                  scrolled ? "text-warm-800" : "text-white"
+                }`}
+                style={{ fontFamily: "'Playfair Display', serif" }}
+              >
+                MC Delicias
+              </h1>
+              <p
+                className={`text-[10px] uppercase tracking-[0.2em] font-medium transition-colors duration-300 ${
+                  scrolled ? "text-warm-500" : "text-white/70"
+                }`}
+              >
+                Campestres
+              </p>
+            </div>
+          </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <a href="#productos" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Productos
-            </a>
-            <a href="#nosotros" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Nosotros
-            </a>
-            <a href="#contacto" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Contacto
-            </a>
-            <a href="tel:+5491123456789" className="flex items-center text-primary-600 hover:text-primary-700">
-              <Phone className="w-4 h-4 mr-1" />
-              (11) 1234-5678
-            </a>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-8">
+            {[
+              { href: "#catalogo", label: "Catálogo" },
+              { href: "#precios", label: "Precios Mayoristas" },
+              { href: "#nosotros", label: "Nosotros" },
+              { href: "#contacto", label: "Contacto" },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`text-sm font-medium transition-all duration-300 hover:opacity-70 ${
+                  scrolled ? "text-warm-700" : "text-white/90"
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
           </nav>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-primary-600"
+          {/* CTA */}
+          <div className="hidden md:block">
+            <a
+              href="https://wa.me/5491100000000?text=Hola! Quiero hacer un pedido"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
+                scrolled
+                  ? "bg-olive-600 text-white hover:bg-olive-700 shadow-md"
+                  : "bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30"
+              }`}
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+              <span>📱</span>
+              Hacer Pedido
+            </a>
           </div>
-        </div>
-      </div>
 
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <a 
-              href="#productos" 
-              className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md"
-              onClick={() => setIsMenuOpen(false)}
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className={`md:hidden p-2 rounded-lg transition-colors ${
+              scrolled ? "text-warm-700" : "text-white"
+            }`}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              Productos
-            </a>
-            <a 
-              href="#nosotros" 
-              className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Nosotros
-            </a>
-            <a 
-              href="#contacto" 
-              className="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contacto
-            </a>
-            <a 
-              href="tel:+5491123456789" 
-              className="flex items-center px-3 py-2 text-primary-600 hover:bg-gray-50 rounded-md"
-            >
-              <Phone className="w-4 h-4 mr-2" />
-              (11) 1234-5678
-            </a>
-          </div>
+              {menuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
         </div>
-      )}
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="md:hidden mt-4 p-4 bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-warm-100">
+            <nav className="flex flex-col gap-3">
+              {[
+                { href: "#catalogo", label: "🛒 Catálogo" },
+                { href: "#precios", label: "💰 Precios Mayoristas" },
+                { href: "#nosotros", label: "❤️ Nosotros" },
+                { href: "#contacto", label: "📞 Contacto" },
+              ].map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-warm-700 font-medium py-2 px-3 rounded-lg hover:bg-warm-50 transition-colors"
+                >
+                  {item.label}
+                </a>
+              ))}
+              <a
+                href="https://wa.me/5491100000000?text=Hola! Quiero hacer un pedido"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary mt-2 text-center"
+              >
+                📱 Hacer Pedido por WhatsApp
+              </a>
+            </nav>
+          </div>
+        )}
+      </div>
     </header>
-  )
+  );
 }

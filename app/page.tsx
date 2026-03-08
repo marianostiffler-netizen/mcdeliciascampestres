@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
+      <Header />
       <Hero />
       <CategoryFilter 
         selectedCategory={selectedCategory}
