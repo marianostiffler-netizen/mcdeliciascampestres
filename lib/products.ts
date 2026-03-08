@@ -62,7 +62,7 @@ export const products: Product[] = [
   {
     id: "alfajor-maicena",
     category: "alfajores",
-    name: "Alfajor de Maicena",
+    name: "Alfajor de Maicena x6 Unidades",
     basePrice: increasePrice40(2187),
     unit: "unidad",
     description: "Suave alfajor de maicena con dulce de leche artesanal y coco rallado.",
@@ -71,17 +71,11 @@ export const products: Product[] = [
     price10: calcPrice10(increasePrice40(2187)),
     price50: calcPrice50(increasePrice40(2187)),
     price100: calcPrice100(increasePrice40(2187)),
-    hasVariants: true,
-    variants: [
-      { label: "Unidad", price: increasePrice40(2187) },
-      { label: "Caja x6", price: increasePrice40(3780) },
-      { label: "Caja x10/12", price: increasePrice40(5670) },
-    ],
   },
   {
     id: "alfajor-crocante",
     category: "alfajores",
-    name: "Alfajor Crocante",
+    name: "Alfajor Crocante x6 Unidades",
     basePrice: 2426,
     unit: "unidad",
     description: "Alfajor crocante con relleno de dulce de leche y textura crujiente.",
@@ -90,17 +84,11 @@ export const products: Product[] = [
     price10: calcPrice10(2426),
     price50: calcPrice50(2426),
     price100: calcPrice100(2426),
-    hasVariants: true,
-    variants: [
-      { label: "Unidad", price: 2426 },
-      { label: "Caja x6", price: 5306 },
-      { label: "Caja x10/12", price: 7294 },
-    ],
   },
   {
     id: "alfajor-chocolate",
     category: "alfajores",
-    name: "Alfajor de Chocolate",
+    name: "Alfajor de Chocolate x6 Unidades",
     basePrice: 2426,
     unit: "unidad",
     description:
@@ -110,12 +98,6 @@ export const products: Product[] = [
     price10: calcPrice10(2426),
     price50: calcPrice50(2426),
     price100: calcPrice100(2426),
-    hasVariants: true,
-    variants: [
-      { label: "Unidad", price: 2426 },
-      { label: "Caja x6", price: 4844 },
-      { label: "Caja x10/12", price: 7294 },
-    ],
   },
   {
     id: "alfajor-coco",
@@ -500,11 +482,6 @@ export const products: Product[] = [
     price10: calcPrice10(4693),
     price50: calcPrice50(4693),
     price100: calcPrice100(4693),
-    hasVariants: true,
-    variants: [
-      { label: "200g", price: 4693 },
-      { label: "1 Kg", price: 13300 },
-    ],
   },
   {
     id: "palmeron",
@@ -533,11 +510,6 @@ export const products: Product[] = [
     price10: calcPrice10(3899),
     price50: calcPrice50(3899),
     price100: calcPrice100(3899),
-    hasVariants: true,
-    variants: [
-      { label: "200g", price: 3899 },
-      { label: "1 Kg", price: 15131 },
-    ],
   },
   {
     id: "hojaldre-manzana",
