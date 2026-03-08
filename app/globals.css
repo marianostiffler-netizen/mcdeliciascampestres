@@ -10,10 +10,46 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors;
+    @apply bg-warm-500 hover:bg-warm-600 text-white font-medium py-3 px-6 rounded-lg transition-colors;
   }
   
   .btn-secondary {
-    @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors;
+    @apply bg-cream-100 hover:bg-cream-200 text-warm-700 font-medium py-3 px-6 rounded-lg transition-colors;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .category-pill {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border-2;
+  }
+
+  .category-pill-active {
+    @apply category-pill bg-warm-500 text-white border-warm-500 shadow-lg;
+  }
+
+  .category-pill-inactive {
+    @apply category-pill bg-white text-warm-600 border-warm-200 hover:bg-warm-50;
+  }
+
+  .card-hover {
+    @apply hover:shadow-xl hover:shadow-warm-200/40;
+  }
+
+  .image-placeholder {
+    @apply bg-gradient-to-br from-cream-100 via-cream-200 to-warm-100 flex items-center justify-center;
+  }
+
+  .price-tag {
+    @apply bg-warm-100 text-warm-700 px-3 py-1 rounded-full text-sm font-semibold;
+  }
+
+  .price-tag-accent {
+    @apply bg-berry-100 text-berry-700 px-3 py-1 rounded-full text-sm font-semibold;
   }
 }
