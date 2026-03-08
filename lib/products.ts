@@ -352,9 +352,24 @@ export function formatPrice(price: number): string {
 }
 
 export function getDiscountPercentage(quantity: number): number {
-  if (quantity >= 100) return 12;
+  if (quantity >= 100) return 15;
+  if (quantity >= 50) return 10;
   if (quantity >= 10) return 5;
   return 0;
+}
+
+export function getPriceByQuantity(basePrice: number, quantity: number): number {
+  if (quantity >= 100) return Math.round(basePrice * 0.85); // 15% descuento
+  if (quantity >= 50) return Math.round(basePrice * 0.90); // 10% descuento
+  if (quantity >= 10) return Math.round(basePrice * 0.95); // 5% descuento
+  return basePrice;
+}
+
+export function getDiscountTier(quantity: number): 'minorista' | 'semi-mayorista' | 'mayorista' | 'premium' {
+  if (quantity >= 100) return 'premium';
+  if (quantity >= 50) return 'mayorista';
+  if (quantity >= 10) return 'semi-mayorista';
+  return 'minorista';
 }
 
 export function getProductsByCategory(categoryId: string): Product[] {
