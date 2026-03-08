@@ -25,16 +25,16 @@ export default function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <div
-              className={`w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 ${
+              className={`w-14 h-8 rounded-xl flex items-center justify-center transition-all duration-300 ${
                 scrolled
                   ? "bg-gradient-to-br from-warm-500 to-warm-600 shadow-md"
-                  : "bg-cream-100 shadow-md"
+                  : "bg-white shadow-md"
               }`}
             >
               <img 
-                src="/logo.svg" 
+                src="/logo-mcdelicias.svg" 
                 alt="MC Delicias Campestres" 
-                className="w-8 h-8"
+                className="w-12 h-6"
               />
             </div>
             <div>
