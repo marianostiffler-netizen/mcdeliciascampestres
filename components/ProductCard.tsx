@@ -48,14 +48,14 @@ export default function ProductCard({ product, quantity, onAddToCart, onUpdateQu
         <div className="flex items-center justify-between mb-4">
           <div>
             <span className="text-2xl font-bold text-primary-600">
-              ${product.price}
+              ${product.pricePerUnit}
             </span>
             <span className="text-gray-500 text-sm ml-1">
               /{product.unit}
             </span>
           </div>
           <div className="text-xs text-gray-500">
-            Mínimo: {product.minOrder} {product.unit}
+            Mínimo: 1 {product.unit}
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export default function ProductCard({ product, quantity, onAddToCart, onUpdateQu
           
           {quantity > 0 && (
             <div className="text-sm font-semibold text-primary-600">
-              ${(product.price * quantity).toFixed(2)}
+              ${(product.pricePerUnit * quantity).toFixed(2)}
             </div>
           )}
         </div>

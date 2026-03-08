@@ -29,7 +29,7 @@ export default function PriceCalculator({ cart }: PriceCalculatorProps) {
   }).filter((item): item is NonNullable<typeof item> => item !== null)
 
   const total = cartItems.reduce((sum, item) => {
-    return sum + item.price * item.quantity
+    return sum + item.pricePerUnit * item.quantity
   }, 0)
 
   const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0)
@@ -49,7 +49,7 @@ export default function PriceCalculator({ cart }: PriceCalculatorProps) {
           order: cartItems.map(item => ({
             name: item?.name,
             quantity: item.quantity,
-            price: item?.price
+            price: item?.pricePerUnit
           })),
           total
         })
@@ -109,11 +109,11 @@ export default function PriceCalculator({ cart }: PriceCalculatorProps) {
                     <div>
                       <h4 className="font-semibold">{item?.name}</h4>
                       <p className="text-sm text-gray-600">
-                        {item?.quantity} {item?.unit} × ${item?.price}
+                        {item?.quantity} {item?.unit} × ${item?.pricePerUnit}
                       </p>
                     </div>
                     <div className="font-semibold">
-                      ${((item?.price || 0) * item.quantity).toFixed(2)}
+                      ${((item?.pricePerUnit || 0) * item.quantity).toFixed(2)}
                     </div>
                   </div>
                 ))}
