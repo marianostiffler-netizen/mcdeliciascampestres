@@ -20,7 +20,7 @@ export default function CategoryFilter({ selectedCategory, onCategoryChange }: C
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {category.name}
+              {category.label}
             </button>
           ))}
         </div>
