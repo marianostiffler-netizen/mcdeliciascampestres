@@ -3,50 +3,49 @@ import ProductCard from './ProductCard'
 
 interface ProductGridProps {
   products: Product[]
-  cart: Array<{ id: string; quantity: number }>
-  onAddToCart: (productId: string) => void
-  onUpdateQuantity: (productId: string, quantity: number) => void
 }
 
-export default function ProductGrid({ products, cart, onAddToCart, onUpdateQuantity }: ProductGridProps) {
-  const getQuantity = (productId: string) => {
-    const item = cart.find(item => item.id === productId)
-    return item ? item.quantity : 0
-  }
-
+export default function ProductGrid({ products }: ProductGridProps) {
   return (
-    <section id="productos" className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="catalogo" className="section-padding bg-cream-50">
+      <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Nuestros Productos
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-warm-100 rounded-full mb-4">
+            <span>🛒</span>
+            <span className="text-sm font-semibold text-warm-700">
+              Catálogo de Productos
+            </span>
+          </div>
+          <h2
+            className="text-4xl sm:text-5xl font-bold text-warm-800 mb-4"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Descubrí Nuestros Sabores
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Descubre nuestra variedad de panes, facturas, pastelería y salados, 
-            todos elaborados con ingredientes de la mejor calidad.
+          <p className="text-lg text-warm-600 max-w-2xl mx-auto">
+            Alfajores, dulces artesanales, salados y mucho más. 
+            Todo elaborado con amor y los mejores ingredientes.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.map((product) => (
+          {products.map((product, index) => (
             <ProductCard
               key={product.id}
               product={product}
-              quantity={getQuantity(product.id)}
-              onAddToCart={onAddToCart}
-              onUpdateQuantity={onUpdateQuantity}
+              index={index}
             />
           ))}
         </div>
 
         {products.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">
+            <p className="text-warm-500 text-lg">
               No hay productos en esta categoría.
             </p>
           </div>
         )}
       </div>
     </section>
-  )
+  );
 }
