@@ -55,8 +55,8 @@ export default function Home() {
       <Header />
       <Hero />
       <CategoryFilter 
-        selectedCategory={selectedCategory}
-        onCategoryChange={setSelectedCategory}
+        active={selectedCategory}
+        onChange={setSelectedCategory}
       />
       <ProductGrid 
         products={filteredProducts}

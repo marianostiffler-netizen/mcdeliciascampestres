@@ -1,30 +1,33 @@
-import { categories } from '@/lib/products'
+"use client";
 
-interface CategoryFilterProps {
-  selectedCategory: string
-  onCategoryChange: (category: string) => void
+import { categories } from "@/lib/products";
+
+interface Props {
+  active: string;
+  onChange: (id: string) => void;
 }
 
-export default function CategoryFilter({ selectedCategory, onCategoryChange }: CategoryFilterProps) {
+export default function CategoryFilter({ active, onChange }: Props) {
   return (
-    <section className="bg-white py-8 border-b">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-center gap-4">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => onCategoryChange(category.id)}
-              className={`px-6 py-3 rounded-full font-medium transition-all ${
-                selectedCategory === category.id
-                  ? 'bg-primary-600 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
+    <div className="relative">
+      <div className="category-scroll flex gap-3 overflow-x-auto pb-4 pt-2 px-1">
+        {categories.map((cat) => (
+          <button
+            key={cat.id}
+            onClick={() => onChange(cat.id)}
+            className={`category-pill flex-shrink-0 ${
+              active === cat.id
+                ? "category-pill-active"
+                : "category-pill-inactive"
+            }`}
+          >
+            {cat.label}
+          </button>
+        ))}
       </div>
-    </section>
-  )
+
+      {/* Fade edges for scroll indication */}
+      <div className="absolute top-0 right-0 bottom-4 w-12 bg-gradient-to-l from-cream-50 to-transparent pointer-events-none" />
+    </div>
+  );
 }
