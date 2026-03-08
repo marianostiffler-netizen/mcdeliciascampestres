@@ -161,8 +161,7 @@ export const products: Product[] = [
     name: "Masitas Varias",
     basePrice: 3052,
     unit: "kg",
-    description:
-      "Surtido de masitas artesanales, cada una con sabor único. Perfectas para compartir en familia.",
+    description: "Surtido de masitas artesanales, cada una con sabor único.",
     image: "/images/masitas-varias.jpg",
     pricePerUnit: 3052,
     price10: calcPrice10(3052),
@@ -247,8 +246,7 @@ export const products: Product[] = [
     name: "Saborizadas",
     basePrice: 1940,
     unit: "unidad",
-    description:
-      "Galletitas saborizadas artesanales, con hierbas y especias seleccionadas. Perfectas para picoteo.",
+    description: "Galletitas saborizadas artesanales, con hierbas y especias seleccionadas.",
     image: "/images/saborizadas.jpg",
     pricePerUnit: 1940,
     price10: calcPrice10(1940),
@@ -331,8 +329,7 @@ export const products: Product[] = [
     name: "Plancha de Pizza 45x70",
     basePrice: 25313,
     unit: "plancha",
-    description:
-      "Plancha grande de pizza artesanal (45x70cm). Ideal para eventos, reuniones y locales gastronómicos.",
+    description: "Plancha grande de pizza artesanal (45x70cm) para eventos y locales gastronómicos.",
     image: "/images/plancha-pizza-grande.jpg",
     pricePerUnit: 25313,
     price10: calcPrice10(25313),
@@ -359,8 +356,7 @@ export const products: Product[] = [
     name: "Torta Salada Grande",
     basePrice: 41825,
     unit: "unidad",
-    description:
-      "Torta salada grande con relleno abundante y variado. Ideal para eventos y celebraciones.",
+    description: "Torta salada grande con relleno abundante y variado para eventos y celebraciones.",
     image: "/images/torta-salada-grande.jpg",
     pricePerUnit: 41825,
     price10: calcPrice10(41825),
@@ -547,8 +543,7 @@ export const products: Product[] = [
     name: "Pasta Frola P.20",
     basePrice: 4445,
     unit: "unidad",
-    description:
-      "Pasta frola mediana (20cm), ideal para compartir en familia. Masa mantecosa y dulce casero.",
+    description: "Pasta frola mediana (20cm) con masa mantecosa y dulce casero.",
     image: "/images/frola-p20.jpg",
     pricePerUnit: 4445,
     price10: calcPrice10(4445),
@@ -605,8 +600,7 @@ export const products: Product[] = [
     name: "Tarta P.20",
     basePrice: 4649,
     unit: "unidad",
-    description:
-      "Tarta artesanal mediana (20cm) con relleno casero generoso. Ideal para compartir entre dos.",
+    description: "Tarta artesanal mediana (20cm) con relleno casero generoso.",
     image: "/images/tarta-p20.jpg",
     pricePerUnit: 4649,
     price10: calcPrice10(4649),
@@ -633,8 +627,7 @@ export const products: Product[] = [
     name: "Tarta P.33",
     basePrice: 9208,
     unit: "unidad",
-    description:
-      "Tarta artesanal extra grande (33cm). Ideal para eventos, fiestas y reuniones numerosas.",
+    description: "Tarta artesanal extra grande (33cm) para eventos, fiestas y reuniones numerosas.",
     image: "/images/tarta-p33.jpg",
     pricePerUnit: 9208,
     price10: calcPrice10(9208),
@@ -707,8 +700,7 @@ export const products: Product[] = [
     name: "Plancha Frola/Tarta (Coco/Toffe)",
     basePrice: 42786,
     unit: "plancha",
-    description:
-      "Plancha grande de frola o tarta (Coco/Toffee). Ideal para cortar porciones y vender en tu local.",
+    description: "Plancha grande de frola o tarta (Coco/Toffee) para cortar porciones y vender en tu local.",
     image: "/images/plancha-frola.jpg",
     pricePerUnit: 42786,
     price10: calcPrice10(42786),
@@ -763,8 +755,7 @@ export const products: Product[] = [
     name: "Marineras (base 955)",
     basePrice: 1685,
     unit: "unidad",
-    description:
-      "Galletas marineras artesanales, crocantes y perfectas para acompañar cualquier comida.",
+    description: "Galletas marineras artesanales, crocantes y deliciosas.",
     image: "/images/marineras-pan.jpg",
     pricePerUnit: 1685,
     price10: calcPrice10(1685),
@@ -819,8 +810,7 @@ export const products: Product[] = [
     name: "Roscas",
     basePrice: 5047,
     unit: "unidad",
-    description:
-      "Roscas artesanales esponjosas y aromáticas. Perfectas para el desayuno y la merienda.",
+    description: "Roscas artesanales esponjosas y aromáticas.",
     image: "/images/roscas.jpg",
     pricePerUnit: 5047,
     price10: calcPrice10(5047),
