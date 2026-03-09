@@ -58,12 +58,12 @@ export default function Footer() {
               <div className="text-center">
                 <span className="text-4xl block mb-3">💛</span>
                 <h3
-                  className="font-bold text-lg mb-2"
+                  className="font-bold text-lg mb-2 text-warm-200"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
                   Hecho con Amor
                 </h3>
-                <p className="text-white/50 text-sm">
+                <p className="text-warm-300 text-sm">
                   La pasión es nuestro ingrediente secreto
                 </p>
               </div>

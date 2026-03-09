@@ -105,7 +105,7 @@ export default function Hero() {
 
           {/* Trust indicators */}
           <div
-            className="mt-16 flex flex-wrap items-center justify-center gap-8 text-white/50 animate-fade-in"
+            className="mt-16 flex flex-wrap items-center justify-center gap-8 text-warm-200 animate-fade-in"
             style={{ animationDelay: "600ms" }}
           >
             <div className="flex items-center gap-2">
@@ -114,12 +114,12 @@ export default function Hero() {
                 Precios especiales por mayor
               </span>
             </div>
-            <div className="hidden sm:block w-px h-6 bg-white/20" />
+            <div className="hidden sm:block w-px h-6 bg-warm-600/20" />
             <div className="flex items-center gap-2">
               <span className="text-2xl">🚚</span>
               <span className="text-sm font-medium">Envíos y entregas</span>
             </div>
-            <div className="hidden sm:block w-px h-6 bg-white/20" />
+            <div className="hidden sm:block w-px h-6 bg-warm-600/20" />
             <div className="flex items-center gap-2">
               <span className="text-2xl">❤️</span>
               <span className="text-sm font-medium">Hecho con amor</span>
