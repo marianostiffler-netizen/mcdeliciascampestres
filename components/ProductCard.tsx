@@ -61,14 +61,19 @@ export default function ProductCard({ product, index }: Props) {
     >
       {/* Image area */}
       <div className="relative aspect-square overflow-hidden bg-warm-50">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          onError={(e) => {
-            e.currentTarget.src = "/images/logo-transparente.png";
-          }}
-        />
+        {product.image ? (
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-warm-100">
+            <span className="text-warm-400 text-sm font-medium text-center px-4">
+              Foto en proceso
+            </span>
+          </div>
+        )}
 
         {/* Dynamic discount badge */}
         {discountPercentage > 0 && (
