@@ -56,11 +56,11 @@ export default function ProductCard({ product, index }: Props) {
 
   return (
     <div
-      className="group bg-pastel-light rounded-3xl overflow-hidden shadow-md hover:shadow-lg hover:shadow-pastel-border/40 transition-all duration-500 border border-pastel-border card-hover animate-scale-in"
+      className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-warm-200/40 transition-all duration-500 border border-warm-100/50 card-hover animate-scale-in"
       style={{ animationDelay: `${index * 60}ms` }}
     >
       {/* Image area */}
-      <div className="relative aspect-square overflow-hidden bg-pastel-cream">
+      <div className="relative aspect-square overflow-hidden bg-warm-50">
         {product.image ? (
           <img
             src={product.image}
@@ -68,8 +68,8 @@ export default function ProductCard({ product, index }: Props) {
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-pastel-light">
-            <span className="text-pastel-text text-sm font-medium text-center px-4">
+          <div className="w-full h-full flex items-center justify-center bg-warm-100">
+            <span className="text-warm-400 text-sm font-medium text-center px-4">
               Foto en proceso
             </span>
           </div>
@@ -86,7 +86,7 @@ export default function ProductCard({ product, index }: Props) {
 
         {/* Category badge */}
         <div className="absolute top-3 left-3">
-          <div className="bg-pastel-bone/90 backdrop-blur-sm text-pastel-text text-xs font-semibold px-3 py-1.5 rounded-full">
+          <div className="bg-white/90 backdrop-blur-sm text-warm-700 text-xs font-semibold px-3 py-1.5 rounded-full">
             {product.unit}
           </div>
         </div>
@@ -96,35 +96,35 @@ export default function ProductCard({ product, index }: Props) {
       <div className="p-5">
         {/* Name */}
         <h3
-          className="text-lg font-bold text-pastel-text mb-2 leading-snug"
+          className="text-lg font-bold text-warm-800 mb-2 leading-snug"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           {product.name}
         </h3>
 
         {/* Description */}
-        <p className="text-pastel-text/80 text-sm leading-relaxed mb-4">
+        <p className="text-warm-500 text-sm leading-relaxed mb-4">
           {product.description}
         </p>
 
         {/* Quantity selector */}
         <div className="mb-4">
-          <label className="text-sm font-medium text-pastel-text mb-2 block">
+          <label className="text-sm font-medium text-warm-600 mb-2 block">
             Cantidad
           </label>
           <div className="flex items-center gap-3">
             <button
               onClick={() => setQuantity(Math.max(1, quantity - 1))}
-              className="w-10 h-10 rounded-lg bg-pastel-cream hover:bg-pastel-border text-pastel-text font-bold transition-colors"
+              className="w-10 h-10 rounded-lg bg-warm-100 hover:bg-warm-200 text-warm-700 font-bold transition-colors"
             >
               -
             </button>
-            <span className="text-lg font-semibold text-pastel-text w-12 text-center">
+            <span className="text-lg font-semibold text-warm-700 w-12 text-center">
               {quantity}
             </span>
             <button
               onClick={() => setQuantity(quantity + 1)}
-              className="w-10 h-10 rounded-lg bg-pastel-cream hover:bg-pastel-border text-pastel-text font-bold transition-colors"
+              className="w-10 h-10 rounded-lg bg-warm-100 hover:bg-warm-200 text-warm-700 font-bold transition-colors"
             >
               +
             </button>
@@ -135,16 +135,16 @@ export default function ProductCard({ product, index }: Props) {
         <div className="mb-4">
           <div className="flex items-baseline justify-between">
             <div>
-              <div className="text-sm text-pastel-text/60">
+              <div className="text-sm text-warm-600">
                 {formatPrice(currentPrice)} por unidad
               </div>
               {savings > 0 && (
-                <div className="text-xs text-pastel-text/50">
+                <div className="text-xs text-warm-500">
                   Ahorrás {formatPrice(savings)}
                 </div>
               )}
             </div>
-            <div className="text-lg font-bold text-pastel-text">
+            <div className="text-lg font-bold text-warm-800">
               {formatPrice(currentPrice * quantity)}
             </div>
           </div>
@@ -152,13 +152,13 @@ export default function ProductCard({ product, index }: Props) {
 
         {/* Tier indicator */}
         {discountPercentage > 0 && (
-          <div className="mb-4 p-2 rounded-lg bg-gradient-to-r from-pastel-cream to-pastel-light border border-pastel-border">
+          <div className="mb-4 p-2 rounded-lg bg-gradient-to-r from-warm-50 to-olive-50 border border-warm-200">
             <div className="flex items-center justify-center gap-2 text-sm">
-              <span className="font-medium text-pastel-text">
+              <span className="font-medium text-warm-700">
                 {discountPercentage === 5 && '📌 Semi-Mayorista'}
                 {discountPercentage === 12 && '⭐ Mayorista'}
               </span>
-              <span className="text-pastel-text/80">
+              <span className="text-warm-600">
                 {discountPercentage}% de descuento
               </span>
             </div>
@@ -166,7 +166,7 @@ export default function ProductCard({ product, index }: Props) {
         )}
 
         {/* Add to cart button */}
-        <button className="w-full bg-pastel-button text-pastel-creamText text-sm py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-pastel-button/90 transition-colors font-medium">
+        <button className="w-full btn-primary text-sm py-2.5 rounded-xl flex items-center justify-center gap-2">
           <span>🛒</span>
           Agregar al carrito
         </button>

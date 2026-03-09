@@ -14,10 +14,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-pastel-border ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-pastel-light/95 backdrop-blur-xl shadow-md py-3"
-          : "bg-pastel-light py-5"
+          ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-warm-200/20 py-3"
+          : "bg-cream-100 py-5"
       }`}
     >
       <div className="container-custom px-4 sm:px-6 lg:px-8">
