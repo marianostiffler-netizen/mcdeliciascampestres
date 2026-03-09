@@ -264,8 +264,19 @@ export const products: Product[] = [
     unit: "porción",
     description: "Brownie húmedo y chocolatoso con nueces. Porción generosa.",
     image: "/images/brownie.jpg",
-    price10: calcPrice10(3059),
-    price100: calcPrice100(3059),
+    price10: calcPrice10(4370),
+    price100: calcPrice100(4370),
+  },
+  {
+    id: "espejitos-membrillo-dulce-leche",
+    category: "varios-dulces",
+    name: "Varios Dulces Espejitos de membrillo o dulce de leche",
+    price: 4370,
+    unit: "kg",
+    description: "Espejitos tradicionales con relleno de membrillo o dulce de leche.",
+    image: "/images/espejitos.jpg",
+    price10: calcPrice10(4370),
+    price100: calcPrice100(4370),
   },
 
   // ═══════════ SALADOS ═══════════
