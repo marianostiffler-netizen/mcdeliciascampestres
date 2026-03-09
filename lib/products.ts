@@ -531,7 +531,7 @@ export const products: Product[] = [
   {
     id: "frola-p15",
     category: "frolas",
-    name: "Frolas P.15",
+    name: "Frolas P.15 membrillo/ DDL/Batata",
     price: 2540,
     unit: "unidad",
     description: "Pasta frola chica (15cm) con dulce de membrillo o batata.",
@@ -542,7 +542,7 @@ export const products: Product[] = [
   {
     id: "frola-p20",
     category: "frolas",
-    name: "Frolas P.20",
+    name: "Frolas P.20 membrillo/ DDL/Batata",
     price: 5040,
     unit: "unidad",
     description: "Pasta frola mediana (20cm) con masa mantecosa y dulce casero.",
@@ -553,7 +553,7 @@ export const products: Product[] = [
   {
     id: "frola-p23",
     category: "frolas",
-    name: "Frolas P.23",
+    name: "Frolas P.23 membrillo/ DDL/Batata",
     price: 5800,
     unit: "unidad",
     description: "Pasta frola grande (23cm) con generoso relleno casero.",
@@ -564,7 +564,7 @@ export const products: Product[] = [
   {
     id: "frola-p33",
     category: "frolas",
-    name: "Frolas P.33",
+    name: "Frolas P.33 membrillo/ DDL/Batata",
     price: 10360,
     unit: "unidad",
     description: "Pasta frola extra grande (33cm) para eventos y celebraciones.",
