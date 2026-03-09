@@ -74,7 +74,7 @@ export const products: Product[] = [
     price: 2750,
     unit: "unidad",
     description: "Alfajor crocante con dulce de leche, textura irresistible.",
-    image: "",
+    image: "/images/Alfajor Crocante unidad.JPG",
     price10: calcPrice10(1925),
     price100: calcPrice100(1925),
   },
