@@ -248,7 +248,7 @@ export const products: Product[] = [
   {
     id: "copitos",
     category: "varios-dulces",
-    name: "Varios Dulces Copitos",
+    name: "Copitos de chocolate x12",
     price: 6640,
     unit: "kg",
     description: "Copitos de merengue livianos que se deshacen en la boca.",
