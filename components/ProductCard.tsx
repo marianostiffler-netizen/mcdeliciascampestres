@@ -60,17 +60,15 @@ export default function ProductCard({ product, index }: Props) {
       style={{ animationDelay: `${index * 60}ms` }}
     >
       {/* Image area */}
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <div className="image-placeholder w-full h-full">
-          <div className="text-center">
-            <span className="text-6xl block mb-2 group-hover:scale-110 transition-transform duration-500">
-              {emoji}
-            </span>
-            <span className="text-warm-400 text-xs font-medium uppercase tracking-wider">
-              {product.category.replace("-", " ")}
-            </span>
-          </div>
-        </div>
+      <div className="relative aspect-square overflow-hidden bg-warm-50">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.currentTarget.src = "/images/logo-transparente.png";
+          }}
+        />
 
         {/* Dynamic discount badge */}
         {discountPercentage > 0 && (
