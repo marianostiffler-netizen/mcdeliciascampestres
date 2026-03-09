@@ -226,7 +226,7 @@ export const products: Product[] = [
   {
     id: "secas",
     category: "varios-dulces",
-    name: "Varios Dulces Secas",
+    name: "Masas secas",
     price: 4680,
     unit: "kg",
     description: "Masitas secas surtidas, calidad artesanal en cada unidad.",
