@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import "./globals.css";
+import SplashScreen from "@/components/SplashScreen";
 
 export const metadata: Metadata = {
   title: "MC Delicias Campestres | Catálogo Mayorista & Minorista",
@@ -39,6 +40,7 @@ export default function RootLayout({
           fontFamily: "'Inter', system-ui, sans-serif",
         }}
       >
+        <SplashScreen />
         <div className="relative z-10">{children}</div>
       </body>
     </html>
