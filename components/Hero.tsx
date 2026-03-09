@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[100vh] flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pastel-cream via-pastel-light to-pastel-cream" />
+      <div className="absolute inset-0 bg-gradient-to-br from-pastel-cream via-pastel-cream to-pastel-cream" />
 
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="relative z-10 container-custom px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-5 py-2 bg-pastel-bone/80 backdrop-blur-sm rounded-full border border-pastel-border mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-5 py-2 bg-pastel-light/80 backdrop-blur-sm rounded-full border border-pastel-border mb-8 animate-fade-in">
             <span className="text-sm">🏡</span>
             <span className="text-sm text-pastel-text font-medium">
               Panificación artesanal desde el corazón del campo
@@ -82,7 +82,7 @@ export default function Hero() {
           >
             <a
               href="#catalogo"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-pastel-button text-white font-bold rounded-2xl hover:bg-pastel-button/90 transition-all duration-300 shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-[0.98] text-lg"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-pastel-button text-pastel-creamText font-bold rounded-2xl hover:bg-pastel-button/90 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] text-lg"
             >
               <span>📖</span>
               Ver Catálogo Completo
@@ -91,7 +91,7 @@ export default function Hero() {
               href="https://wa.me/5493412524163?text=Hola! Me interesa conocer los precios mayoristas"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-pastel-bone/80 backdrop-blur-sm text-pastel-text font-semibold rounded-2xl border-2 border-pastel-border hover:bg-pastel-bone transition-all duration-300 text-lg"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-pastel-light/80 backdrop-blur-sm text-pastel-text font-semibold rounded-2xl border-2 border-pastel-border hover:bg-pastel-light transition-all duration-300 text-lg"
             >
               <span>💬</span>
               Consultar Mayorista

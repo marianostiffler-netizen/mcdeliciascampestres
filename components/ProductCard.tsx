@@ -56,7 +56,7 @@ export default function ProductCard({ product, index }: Props) {
 
   return (
     <div
-      className="group bg-pastel-light rounded-3xl overflow-hidden shadow-sm hover:shadow-md hover:shadow-pastel-border/40 transition-all duration-500 border border-pastel-border card-hover animate-scale-in"
+      className="group bg-pastel-light rounded-3xl overflow-hidden shadow-md hover:shadow-lg hover:shadow-pastel-border/40 transition-all duration-500 border border-pastel-border card-hover animate-scale-in"
       style={{ animationDelay: `${index * 60}ms` }}
     >
       {/* Image area */}
@@ -166,7 +166,7 @@ export default function ProductCard({ product, index }: Props) {
         )}
 
         {/* Add to cart button */}
-        <button className="w-full bg-pastel-button text-white text-sm py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-pastel-button/90 transition-colors font-medium">
+        <button className="w-full bg-pastel-button text-pastel-creamText text-sm py-2.5 rounded-xl flex items-center justify-center gap-2 hover:bg-pastel-button/90 transition-colors font-medium">
           <span>🛒</span>
           Agregar al carrito
         </button>
