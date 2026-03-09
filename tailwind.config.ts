@@ -9,13 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Nueva paleta Pastel Beige & Cream
+        pastel: {
+          cream: "#FFFFC7", // Fondo principal
+          light: "#F6E3BA",  // Fondo tarjetas
+          border: "#DFCAA0", // Bordes finos
+          button: "#CFB284", // Botones
+          text: "#5D4037",   // Texto café suave
+          bone: "#FFFEF7",   // Navbar blanco hueso
+        },
+        // Mantener colores existentes para compatibilidad
         cream: {
-          50: "#FFFDF7",
-          100: "#FFF9E8",
-          200: "#FFF3D1",
-          300: "#FFE8A8",
-          400: "#FFD970",
-          500: "#FFC837",
+          50: "#FFFFC7",    // Nuevo fondo principal
+          100: "#F6E3BA",   // Nuevo fondo tarjetas
+          200: "#DFCAA0",   // Nuevo borde
+          300: "#CFB284",   // Nuevo botón
+          400: "#5D4037",   // Nuevo texto
+          500: "#FFFEF7",   // Nuevo navbar
+          600: "#F5D9BC",
+          700: "#EFC093",
+          800: "#E8A265",
+          900: "#D4844A",
         },
         warm: {
           50: "#FDF8F3",

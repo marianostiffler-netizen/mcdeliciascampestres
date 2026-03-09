@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[100vh] flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-warm-800 via-warm-700 to-warm-900" />
+      <div className="absolute inset-0 bg-gradient-to-br from-pastel-cream via-pastel-light to-pastel-cream" />
 
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
@@ -47,9 +47,9 @@ export default function Hero() {
       <div className="relative z-10 container-custom px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-5 py-2 bg-pastel-bone/80 backdrop-blur-sm rounded-full border border-pastel-border mb-8 animate-fade-in">
             <span className="text-sm">🏡</span>
-            <span className="text-sm text-white/90 font-medium">
+            <span className="text-sm text-pastel-text font-medium">
               Panificación artesanal desde el corazón del campo
             </span>
           </div>
@@ -65,12 +65,12 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p
-            className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed animate-slide-up"
+            className="text-lg sm:text-xl text-pastel-text/80 max-w-2xl mx-auto mb-10 leading-relaxed animate-slide-up"
             style={{ animationDelay: "200ms" }}
           >
             Cada producto nace de manos expertas con ingredientes seleccionados.
             <br className="hidden sm:block" />
-            <strong className="text-white/90">
+            <strong className="text-pastel-text">
               Hacemos lo que amamos, y se nota en cada bocado.
             </strong>
           </p>
@@ -82,7 +82,7 @@ export default function Hero() {
           >
             <a
               href="#catalogo"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-warm-800 font-bold rounded-2xl hover:bg-cream-100 transition-all duration-300 shadow-2xl shadow-black/20 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98] text-lg"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-pastel-button text-white font-bold rounded-2xl hover:bg-pastel-button/90 transition-all duration-300 shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-[0.98] text-lg"
             >
               <span>📖</span>
               Ver Catálogo Completo
@@ -91,7 +91,7 @@ export default function Hero() {
               href="https://wa.me/5493412524163?text=Hola! Me interesa conocer los precios mayoristas"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-2xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300 text-lg"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-pastel-bone/80 backdrop-blur-sm text-pastel-text font-semibold rounded-2xl border-2 border-pastel-border hover:bg-pastel-bone transition-all duration-300 text-lg"
             >
               <span>💬</span>
               Consultar Mayorista
@@ -100,7 +100,7 @@ export default function Hero() {
 
           {/* Trust indicators */}
           <div
-            className="mt-16 flex flex-wrap items-center justify-center gap-8 text-white/50 animate-fade-in"
+            className="mt-16 flex flex-wrap items-center justify-center gap-8 text-pastel-text/60 animate-fade-in"
             style={{ animationDelay: "600ms" }}
           >
             <div className="flex items-center gap-2">
