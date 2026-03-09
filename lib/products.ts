@@ -230,7 +230,7 @@ export const products: Product[] = [
     price: 4680,
     unit: "kg",
     description: "Masitas secas surtidas, calidad artesanal en cada unidad.",
-    image: "",
+    image: "/images/Varios Dulces Secas.JPG",
     price10: calcPrice10(3276),
     price100: calcPrice100(3276),
   },
