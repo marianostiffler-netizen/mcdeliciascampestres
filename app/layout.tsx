@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import "./globals.css";
 import SplashScreen from "@/components/SplashScreen";
+import GlobalBackgroundPattern from "@/components/GlobalBackgroundPattern";
 
 export const metadata: Metadata = {
   title: "MC Delicias Campestres | Catálogo Mayorista & Minorista",
@@ -40,6 +41,7 @@ export default function RootLayout({
           fontFamily: "'Inter', system-ui, sans-serif",
         }}
       >
+        <GlobalBackgroundPattern />
         <SplashScreen />
         <div className="relative z-10">{children}</div>
       </body>
