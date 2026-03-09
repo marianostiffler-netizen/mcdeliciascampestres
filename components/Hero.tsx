@@ -1,10 +1,15 @@
 "use client";
 
+import BackgroundPattern from "./BackgroundPattern";
+
 export default function Hero() {
   return (
     <section className="relative min-h-[100vh] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-warm-800 via-warm-700 to-warm-900" />
+      
+      {/* Patrón de fondo sutil */}
+      <BackgroundPattern />
 
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
