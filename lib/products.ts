@@ -622,12 +622,12 @@ export const products: Product[] = [
     id: "tarta-mixta",
     category: "tartas",
     name: "Tarta mixta",
-    price: 10440,
+    price: 6000,
     unit: "unidad",
     description: "Tarta artesanal con variedad de sabores, combinación especial.",
     image: "/images/tarta-mixta.jpg",
-    price10: calcPrice10(10440),
-    price100: calcPrice100(10440),
+    price10: calcPrice10(6000),
+    price100: calcPrice100(6000),
   },
 
   // ═══════════ FRUTALES ═══════════
