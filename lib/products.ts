@@ -421,7 +421,7 @@ export const products: Product[] = [
     price: 10920,
     unit: "por persona",
     description: "Mesa dulce para eventos íntimos con selección artesanal.",
-    image: "",
+    image: "/images/IMG_5836.JPG",
     price10: calcPrice10(7644),
     price100: calcPrice100(7644),
   },
