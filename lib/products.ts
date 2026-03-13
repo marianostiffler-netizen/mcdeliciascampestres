@@ -41,7 +41,7 @@ export const products: Product[] = [
     price: 2480,
     unit: "unidad",
     description: "Alfajor de maicena artesanal con dulce de leche, bañado en coco rallado.",
-    image: "",
+    image: "/images/IMG_5855.JPG",
     price10: calcPrice10(1736),
     price100: calcPrice100(1736),
   },
