@@ -140,7 +140,7 @@ export const products: Product[] = [
     price: 3600,
     unit: "caja x6",
     description: "Caja de 6 alfajores de coco con relleno suave. Ideales para el mate.",
-    image: "/images/Alfajores Coco por 6.JPG",
+    image: "/images/image (5).jpg",
     price10: calcPrice10(2520),
     price100: calcPrice100(2520),
   },
