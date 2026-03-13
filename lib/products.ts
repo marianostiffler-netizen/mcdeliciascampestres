@@ -522,7 +522,7 @@ export const products: Product[] = [
     price: 2100,
     unit: "pack x2",
     description: "Hojaldre relleno de manzana caramelizada con canela, 2 unidades.",
-    image: "/images/hojaldre con manzana.JPG",
+    image: "/images/image (6).jpg",
     price10: calcPrice10(1470),
     price100: calcPrice100(1470),
   },
