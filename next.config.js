@@ -2,8 +2,13 @@
 const nextConfig = {
   images: {
     domains: [],
-    unoptimized: false,
+    unoptimized: true,
   },
+  output: 'export',
+  trailingSlash: true,
+  distDir: 'out',
+  basePath: '/mcdeliciascampestres',
+  assetPrefix: '/mcdeliciascampestres',
 };
 
 module.exports = nextConfig;

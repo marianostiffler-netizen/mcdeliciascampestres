@@ -1,0 +1,41 @@
+<svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo MC Delicias con fondo transparente -->
+  <g transform="translate(60, 30)">
+    <!-- Circle background with cream color -->
+    <circle cx="0" cy="0" r="28" fill="#F3E5D8" stroke="#8B7355" stroke-width="1.5"/>
+    
+    <!-- Wheat stalks design -->
+    <g transform="scale(0.8)">
+      <!-- Main wheat stalk -->
+      <path d="M0,-20 L0,15" stroke="#8B7355" stroke-width="2.5" fill="none"/>
+      
+      <!-- Left wheat grains -->
+      <path d="M0,-18 C-6,-16 -9,-13 -11,-8" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+      <ellipse cx="-11" cy="-8" rx="2.5" ry="3.5" fill="#D4A574" transform="rotate(-30 -11 -8)"/>
+      <path d="M0,-14 C-8,-11 -11,-8 -13,-3" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+      <ellipse cx="-13" cy="-3" rx="2.5" ry="3.5" fill="#D4A574" transform="rotate(-30 -13 -3)"/>
+      <path d="M0,-10 C-10,-6 -13,-3 -15,2" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+      <ellipse cx="-15" cy="2" rx="2.5" ry="3.5" fill="#D4A574" transform="rotate(-30 -15 2)"/>
+      
+      <!-- Right wheat grains -->
+      <path d="M0,-18 C6,-16 9,-13 11,-8" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+      <ellipse cx="11" cy="-8" rx="2.5" ry="3.5" fill="#D4A574" transform="rotate(30 11 -8)"/>
+      <path d="M0,-14 C8,-11 11,-8 13,-3" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+      <ellipse cx="13" cy="-3" rx="2.5" ry="3.5" fill="#D4A574" transform="rotate(30 13 -3)"/>
+      <path d="M0,-10 C10,-6 13,-3 15,2" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+      <ellipse cx="15" cy="2" rx="2.5" ry="3.5" fill="#D4A574" transform="rotate(30 15 2)"/>
+      
+      <!-- Small decorative leaves -->
+      <path d="M-5,-5 Q-8,-3 -6,0" stroke="#8B7355" stroke-width="1" fill="none"/>
+      <path d="M5,-5 Q8,-3 6,0" stroke="#8B7355" stroke-width="1" fill="none"/>
+      
+      <!-- Bottom wheat detail -->
+      <path d="M0,15 C-2,17 -2,20 0,22 C2,20 2,17 0,15" fill="#8B7355"/>
+    </g>
+  </g>
+  
+  <!-- Text "MC Delicias" -->
+  <text x="60" y="50" text-anchor="middle" font-family="serif" font-size="10" fill="#8B7355" font-weight="600">
+    MC Delicias
+  </text>
+</svg>
