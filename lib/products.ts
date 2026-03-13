@@ -52,7 +52,7 @@ export const products: Product[] = [
     price: 5400,
     unit: "caja x6",
     description: "Caja de 6 alfajores de maicena con dulce de leche artesanal.",
-    image: "",
+    image: "/images/image (4).jpg",
     price10: calcPrice10(3780),
     price100: calcPrice100(3780),
   },
