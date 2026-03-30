@@ -219,7 +219,7 @@ export const products: Product[] = [
     price: 4580,
     unit: "kg",
     description: "Galletitas materas ideales para acompañar el mate.",
-    image: "/images/image (9).jpg",
+    image: "/images/IMG_6184.JPG",
     price10: calcPrice10(3206),
     price100: calcPrice100(3206),
   },
