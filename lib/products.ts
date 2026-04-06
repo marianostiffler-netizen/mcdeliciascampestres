@@ -224,6 +224,17 @@ export const products: Product[] = [
     price100: calcPrice100(3206),
   },
   {
+    id: "donitas-x12",
+    category: "varios-dulces",
+    name: "Donitas x12 unidades",
+    price: 3200,
+    unit: "caja x12",
+    description: "Caja de 12 donitas esponjosas con glaseado dulce. Ideales para compartir.",
+    image: "/images/BDAk7.jpg",
+    price10: calcPrice10(2240),
+    price100: calcPrice100(2816),
+  },
+  {
     id: "secas",
     category: "varios-dulces",
     name: "Masas secas",
